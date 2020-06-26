@@ -6,14 +6,10 @@
   "author": "Paulo Henrique <santana.pauloh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "pre-commit": "yarn compile:sass",
-    "compile-sass": "node-sass sass/main.scss css/style.css && exit 0"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "pre-commit": [
-    "compile-sass"
-  ],
   "devDependencies": {
-    "node-sass": "^4.13.1",
-    "pre-commit": "^1.2.2"
-  }
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {}
 }
